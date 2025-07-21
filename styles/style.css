@@ -39,7 +39,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
+  height: 960px;
   /* дозволяє фону «вилізти» нижче */
   background: url('/images/BG.png') no-repeat center center;
   background-size: cover;
@@ -118,12 +118,14 @@ font-weight: 700;
 .casino-list {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding-bottom: 117px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
+  z-index: 1;
+  position: relative;
 }
 
 .casino-item {
