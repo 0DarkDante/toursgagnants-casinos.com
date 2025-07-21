@@ -131,12 +131,11 @@ font-weight: 700;
 
 .casino-item {
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 10px 1fr;
   align-items: center;
   background-color: #121212;
   padding: 15px 20px;
-  gap: 40px;
-  /* зроби більший gap для візуального балансу */
+  gap: 20px;
   border-radius: 6px;
   height: 155px;
 }
@@ -374,11 +373,14 @@ font-weight: 600;
   align-items: center;
 }
 
-.footer-logos a img {
-  width: 125px;
-  height: auto;
-  filter: grayscale(70%);
-  transition: filter 0.3s ease;
+.footer-logos img {
+  height: 50px;
+  /* або будь-яка потрібна тобі висота */
+  width: auto;
+  object-fit: contain;
+  /* щоб картинка не обрізалась */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer-logos a:hover img {
